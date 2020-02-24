@@ -1,0 +1,9 @@
+
+
+
+  {% for contact_links in site.contact_urls %}
+    {% assign clinks = contact_links[1]%}
+  <!-- <div class="col-4 bg-secondary" id="right-links"> -->
+    <a id="right-links" class=" " href="{{ clinks.url}}"><img id="img-links" src="{{ clinks.icon }}" alt="{{clinks.label}}"></a>
+  <!-- </div> -->
+  {% endfor %}
